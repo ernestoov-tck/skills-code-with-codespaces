@@ -21,5 +21,10 @@
      }
  }
    ,
- "postCreateCommand": "echo '# Writing code upon codespace creation!'  >> codespace.md"
+  "postCreateCommand": "echo '# Writing code upon codespace creation!'  >> codespace.md",
+  "postCreateCommand": "npm install", // Comando que se ejecuta después de crear el entorno
+  "forwardPorts": [3000], // Puertos abiertos
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  }
 }
